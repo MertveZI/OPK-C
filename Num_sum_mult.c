@@ -58,6 +58,9 @@ int main(void) {
     printf("Введенное число: %u\n", num);
     printf("Сумма цифр: %u\n", sum);
     printf("Произведение цифр: %u\n", product);
-    
+    char ch;
+    printf("Нажмите любую кнопку для продолжения...    ");
+    scanf("%c",&ch);
+
     return 0;
 }

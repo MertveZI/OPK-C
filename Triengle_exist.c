@@ -92,6 +92,9 @@ int main(void) {
     else{
         printf("Треугольника не существует!!");
     }
-   
+    char ch;
+    printf("Нажмите любую кнопку для продолжения...    ");
+    scanf("%c",&ch);
+    
     return 0;
 }
