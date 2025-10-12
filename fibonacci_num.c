@@ -38,9 +38,10 @@ int main(void) {
     scanf_s("%u", &n);
     unsigned int n_fib = generate_n_fib(n);
     printf("Чисдло Фибоначчи под номером %u равно %u \n", n, n_fib);
-    char ch;
-    printf("Нажмите любую кнопку для продолжения...    ");
-    scanf("%c",&ch);
     
+    printf("\nНажмите Enter для выхода...");
+    getchar();
+    getchar();  
+
     return 0;
 }
