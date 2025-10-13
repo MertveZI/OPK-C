@@ -35,7 +35,7 @@ unsigned int digit_mult(unsigned int num) {
     unsigned int temp = num;
     
     if (temp == 0) {
-        return 0;  // произведение цифр числа 0 равно 0
+        return 0;  
     }
     
     while (temp > 0) {
