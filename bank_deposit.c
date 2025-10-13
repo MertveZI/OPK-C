@@ -13,7 +13,9 @@
   * @return конечный баланс на вкладе
   */
 double deposit_balance(double start_balance, unsigned short period, double percent) {
-    double monthly_rate = percent / 12 / 100;  // Рассчет месячной ставки в долях(12 - число месяцев в году, 100 - Чтобы перевести проценты в доли)
+    unsigned short month_in_year = 12;
+    unsigned short base = 100;
+    double monthly_rate = percent / month_in_year / base;  // Рассчет месячной ставки в долях
     return start_balance * pow(1 + monthly_rate, period);
 }
 
