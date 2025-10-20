@@ -2,6 +2,7 @@
     Задача № 6330 "Сортировка вставками"
     Стерлягов Сергей, гр. 24310*/
 #include <stdio.h>
+#include <stdlib.h>
 
 /** <p>Меняет элементы a и b местами.</p>
   * 
@@ -23,7 +24,7 @@ void insertion_sort(int array[], int size) {
     if (size > 1) {
         for(int i = 1; i < size; i++) {
             for(int j = i; j > 0 && array[j - 1] > array[j]; j--) {
-                swap(&array[j - 1], &array[j]); // Передаем указатели
+                swap(&array[j - 1], &array[j]);
             }
         }
     }
@@ -43,9 +44,11 @@ void print_array(int array[], int size) {
 
 int main(void) {
     unsigned int size = 0;
+    int *array = NULL;
+    
     printf("Задача №6330 'Сортировка вставками'\n");
     printf("Введите размер массива: ");
-    scanf_s("%d", &size);
+    scanf("%d", &size);
     
     if (size <= 0) {
         printf("Ошибка: размер массива должен быть положительным числом.\n");
@@ -55,11 +58,19 @@ int main(void) {
         return 1;
     }
     
-    int array[size];
+    // Выделяем память для динамического массива
+    array = (int*)malloc(size * sizeof(int));
+    if (array == NULL) {
+        printf("Ошибка выделения памяти!\n");
+        printf("Нажмите Enter для выхода...");
+        getchar();
+        getchar();
+        return 1;
+    }
     
     printf("Введите %d чисел через пробел: ", size);
     for(int i = 0; i < size; i++) {
-        scanf_s("%d", &array[i]);
+        scanf("%d", &array[i]);
     }
     
     printf("Исходный массив: ");
@@ -70,6 +81,8 @@ int main(void) {
     printf("Отсортированный массив: ");
     print_array(array, size);
 
+    free(array);
+    
     printf("Нажмите Enter для выхода...");
     getchar();
     getchar();
