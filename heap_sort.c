@@ -15,6 +15,18 @@ void swap(int *a, int *b) {
     *b = temp;
 }
 
+/** <p>Выводит массив на экран.</p>
+  * 
+  * @param array массив для вывода
+  * @param size размер массива
+  */
+void print_array(int array[],  int size) {
+    for(int i = 0; i < size; i++) {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+}
+
 /** <pПреобразует в двоичную кучу поддерева(max_heap).</p>
   * 
   * @param array массив для
@@ -66,18 +78,6 @@ void heap_sort(int array[], unsigned int size)
         // вызываем процедуру heapify на уменьшенной куче
         heapify(array, i, 0);
     }
-}
-
-/** <p>Выводит массив на экран.</p>
-  * 
-  * @param array массив для вывода
-  * @param size размер массива
-  */
-void print_array(int array[],  int size) {
-    for(int i = 0; i < size; i++) {
-        printf("%d ", array[i]);
-    }
-    printf("\n");
 }
 
 int main(void) {

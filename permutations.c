@@ -15,7 +15,7 @@ void swap(int *a, int *b) {
     *b = temp;
 }
 
-/** <p>Факториал числа n.</p>
+/** <p>Вычисляет акториал числа n.</p>
   * 
   * @param n число
   * @return n!

@@ -15,6 +15,18 @@ void swap(int *a, int *b) {
     *b = temp;
 }
 
+/** <p>Выводит массив на экран.</p>
+  * 
+  * @param array массив для вывода
+  * @param size размер массива
+  */
+void print_array(int array[], int size) {
+    for(int i = 0; i < size; i++) {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+}
+
 /** <p>Сортирует массив методом вставок.</p>
   * 
   * @param array массив, который необходимо отсортировать
@@ -30,18 +42,6 @@ void insertion_sort(int array[], int size) {
     }
 }
 
-/** <p>Выводит массив на экран.</p>
-  * 
-  * @param array массив для вывода
-  * @param size размер массива
-  */
-void print_array(int array[], int size) {
-    for(int i = 0; i < size; i++) {
-        printf("%d ", array[i]);
-    }
-    printf("\n");
-}
-
 int main(void) {
     unsigned int size = 0;
     int *array = NULL;
@@ -49,14 +49,6 @@ int main(void) {
     printf("Задача №6330 'Сортировка вставками'\n");
     printf("Введите размер массива: ");
     scanf("%d", &size);
-    
-    if (size <= 0) {
-        printf("Ошибка: размер массива должен быть положительным числом.\n");
-        printf("Нажмите Enter для выхода...");
-        getchar();
-        getchar();
-        return 1;
-    }
     
     // Выделяем память для динамического массива
     array = (int*)malloc(size * sizeof(int));

@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include <math.h>
 
-/**
-  * <p>Вычисляет баланс к концу вклада.</p>
+
+/** <p>Вычисляет баланс к концу вклада.</p>
   * 
   * @param start_balance стартовый баланс на вкладе
   * @param period период вклада в месяцах
@@ -13,10 +13,10 @@
   * @return конечный баланс на вкладе
   */
 double deposit_balance(double start_balance, unsigned short period, double percent) {
-    unsigned short month_in_year = 12;
-    unsigned short base = 100;
-    double monthly_rate = percent / month_in_year / base;  // Рассчет месячной ставки в долях
-    return start_balance * pow(1 + monthly_rate, period);
+    const unsigned short month_in_year = 12;
+    const unsigned short base = 100;
+    double monthly_rate = percent / ((double)month_in_year) / ((double)base);  // Рассчет месячной ставки в долях
+    return start_balance * pow(1.0 + monthly_rate, period);
 }
 
 int main(void) {

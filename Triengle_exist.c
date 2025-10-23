@@ -14,12 +14,7 @@
   * @return true, если существует, false, если нет
   */
 bool is_exist(unsigned int a, unsigned int b, unsigned int c) {
-    if (a + b <= c || a + c <= b || b + c <= a || a == 0 || b == 0 || c == 0){
-        return false;
-    }
-    else{
-        return true;
-    }
+    return (a + b <= c || a + c <= b || b + c <= a || a == 0 || b == 0 || c == 0);
 }
 
 /** <p>Проверяет, равнобедренный ли треугольник со сторонами a, b, c.</p>
@@ -30,12 +25,7 @@ bool is_exist(unsigned int a, unsigned int b, unsigned int c) {
   * @return true, если равнобедренный, false, если нет
   */
 bool is_isosceles(unsigned int a, unsigned int b, unsigned int c) {
-    if (a == b || a == c || b == c){
-        return true;
-    }
-    else{
-        return false;
-    }
+    return (a == b || a == c || b == c);
 }
 
 /** <p>Проверяет, равносторонний ли треугольник со сторонами a, b, c.</p>
@@ -46,12 +36,7 @@ bool is_isosceles(unsigned int a, unsigned int b, unsigned int c) {
   * @return true, если равностороний, false, если нет
   */
 bool is_iequilateral(unsigned int a, unsigned int b, unsigned int c) {
-    if (a == b && b == c){
-        return true;
-    }
-    else{
-        return false;
-    }
+    return (a == b && b == c);
 }
 
 /** <p>Проверяет, равносторонний ли треугольник со сторонами a, b, c.</p>
