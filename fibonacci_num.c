@@ -37,7 +37,7 @@ int main(void) {
     printf("Введите номер числа Фибоначчи(больше 0): ");
     scanf_s("%u", &n);
     unsigned int n_fib = generate_n_fib(n);
-    printf("Чисдло Фибоначчи под номером %u равно %u \n", n, n_fib);
+    printf("Число Фибоначчи под номером %u равно %u \n", n, n_fib);
     
     printf("\nНажмите Enter для выхода...");
     getchar();
