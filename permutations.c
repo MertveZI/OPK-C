@@ -31,12 +31,12 @@ unsigned long long factorial(unsigned int n) {
 /** <p>Рекурсивная функция для генерации перестановок.</p>
   * 
   * @param array исходный массив
-  * @param start_id начальный индекс
-  * @param end_id конечный индекс
+  * @param start_id начальный индекс для рекурсии
+  * @param end_id конечный индекс для рекурсии
   * @param result массив для сохранения перестановок
   * @param count указатель на счетчик перестановок
   */
-void permute(int *array, int start_id, int end_id, int **result, int *count) 
+void permute(int **result, int *array, int *count, int start_id, int end_id) 
 { 
     if (start_id == end_id) {
         for(int i = 0; i <= end_id; i++) {
@@ -46,11 +46,12 @@ void permute(int *array, int start_id, int end_id, int **result, int *count)
     } else { 
         for (int i = start_id; i <= end_id; i++) { 
             swap(&array[start_id], &array[i]); 
-            permute(array, start_id + 1, end_id, result, count); 
+            permute(result, array, count, start_id + 1, end_id); 
             swap(&array[start_id], &array[i]); 
         } 
     } 
 } 
+
 
 /** <p>Генерирует все перестановки чисел от 0 до N-1.</p>
   * 
@@ -62,8 +63,9 @@ int** permutations(unsigned int n) {
         return NULL;
     }
     
-    unsigned long long total_permutations = factorial(n);
+    unsigned long long total_permutations = factorial(n); //Количество перестановок
     
+    //Начало выделения памяти
     int **result = (int**)malloc(total_permutations * sizeof(int*));
     if (result == NULL) {
         return NULL;
@@ -88,13 +90,15 @@ int** permutations(unsigned int n) {
         free(result);
         return NULL;
     }
+    //Конец выделения памяти
 
+    //Цикл заполнения массива от 0 до n-1
     for (unsigned int i = 0; i < n; i++) {
         array[i] = i;
     }
-    
+
     int count = 0;
-    permute(array, 0, n - 1, result, &count);
+    permute(result, array, &count, 0, n - 1);
     
     free(array);
     return result;
