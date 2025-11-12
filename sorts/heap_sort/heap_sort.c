@@ -3,6 +3,7 @@
     Стерлягов Сергей, гр. 24310*/
 #include <stdio.h>
 #include <stdlib.h>
+#include "heap_sort.h"
 
 /** <p>Меняет элементы a и b местами.</p>
   * 
