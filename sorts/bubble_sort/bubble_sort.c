@@ -20,7 +20,7 @@ void swap(int *a, int *b) {
   * @param array указатель на массив, который необходимо отсортировать
   * @param size количество элементов в массиве
   */
-void bubble_sort(int* array, int size) {
+void bubble_sort(int* array,unsigned int size) {
     for(int i = 0; i < size - 1; i++){
         for(int j = 0; j < size - i - 1; j++){
             if(array[j] > array[j+1]){

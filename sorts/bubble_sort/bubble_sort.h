@@ -7,4 +7,4 @@
   * @param array указатель на массив, который необходимо отсортировать
   * @param size количество элементов в массиве
   */
-void bubble_sort(int* array, int size);
+void bubble_sort(int* array, unsigned int size);
