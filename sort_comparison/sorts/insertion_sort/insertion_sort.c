@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "insertion_sort.h"
+
 /** <p>Меняет элементы a и b местами.</p>
   * 
   * @param a указатель на элемент a
@@ -20,10 +21,10 @@ void swap(int *a, int *b) {
   * @param array массив, который необходимо отсортировать
   * @param size размер массива
   */
-void insertion_sort(int array[], int size) {
+void insertion_sort(int* array, unsigned int size) {
     if (size > 1) {
-        for(int i = 1; i < size; i++) {
-            for(int j = i; j > 0 && array[j - 1] > array[j]; j--) {
+        for(unsigned int i = 1; i < size; i++) {
+            for(unsigned int j = i; j > 0 && array[j - 1] > array[j]; j--) {
                 swap(&array[j - 1], &array[j]);
             }
         }

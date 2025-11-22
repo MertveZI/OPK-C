@@ -3,6 +3,13 @@
         "stdbool.h": "c",
         "stdio.h": "c",
         "random": "c",
-        "bubble_sort.h": "c"
-    }
+        "bubble_sort.h": "c",
+        "insertion_sort.h": "c",
+        "heap_sort.h": "c",
+        "stdlib.h": "c"
+    },
+    "cmake.additionalCompilerSearchDirs": [
+        "C:\\mingw64\\bin"
+    ],
+    "code-runner.runInTerminal": true
 }

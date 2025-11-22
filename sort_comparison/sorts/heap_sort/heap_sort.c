@@ -52,7 +52,7 @@ void heapify(int arr[], unsigned int size, unsigned int i)
   * @param array массив, который необходимо отсортировать
   * @param size размер массива
   */
-void heap_sort(int array[], unsigned int size)
+void heap_sort(int* array, unsigned int size)
 {
   // Построение кучи
     for (int i = size / 2 - 1; i >= 0; i--)

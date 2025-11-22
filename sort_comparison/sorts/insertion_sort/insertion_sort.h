@@ -8,4 +8,4 @@
   * @param array массив, который необходимо отсортировать
   * @param size размер массива
   */
-void insertion_sort(int array[], int size);
+void insertion_sort(int* array, unsigned int size);
