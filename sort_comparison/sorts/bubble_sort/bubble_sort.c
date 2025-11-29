@@ -2,19 +2,8 @@
     Задача № 6330 "Сортировка пузырьком"
     Стерлягов Сергей, гр. 24310*/
 #include "bubble_sort.h"
+#include "C:\Users\mdrn\Documents\GitHub\OPK-C\sort_comparison\swap.h"
 #include <stdio.h>
-
-
-/** <p>Меняет элементы a и b местами.</p>
-  * 
-  * @param a указатель на элемент a
-  * @param b указатель на элемент b
-  */
-void swap(int *a, int *b) {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
 
 /** <p>Сортирует массив пузырьком.</p>
   * 

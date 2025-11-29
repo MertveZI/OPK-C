@@ -9,7 +9,6 @@
         "stdlib.h": "c"
     },
     "cmake.additionalCompilerSearchDirs": [
-        "C:\\mingw64\\bin"
     ],
     "code-runner.runInTerminal": true
 }

@@ -2,7 +2,7 @@
     Задание № 6352 "Сравнение сортировок"
     Стерлягов Сергей, гр. 24310*/
 
-#include "get_time.h"
+    
 #include "sorts/heap_sort/heap_sort.h"
 #include "sorts/bubble_sort/bubble_sort.h"
 #include "sorts/insertion_sort/insertion_sort.h"

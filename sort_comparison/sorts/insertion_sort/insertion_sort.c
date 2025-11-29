@@ -1,20 +1,11 @@
 /*  Курс ОПК ФФ, 3 семестр, 2025г.
     Задача № 6330 "Сортировка вставками"
     Стерлягов Сергей, гр. 24310*/
+#include "C:\Users\mdrn\Documents\GitHub\OPK-C\sort_comparison\swap.h"
+#include "insertion_sort.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "insertion_sort.h"
 
-/** <p>Меняет элементы a и b местами.</p>
-  * 
-  * @param a указатель на элемент a
-  * @param b указатель на элемент b
-  */
-void swap(int *a, int *b) {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
 
 /** <p>Сортирует массив методом вставок.</p>
   * 
