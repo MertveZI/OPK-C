@@ -1,6 +1,15 @@
 {
     "files.associations": {
-        "swap.h": "c",
-        "stdio.h": "c"
-    }
+        "stdbool.h": "c",
+        "stdio.h": "c",
+        "random": "c",
+        "bubble_sort.h": "c",
+        "insertion_sort.h": "c",
+        "heap_sort.h": "c",
+        "stdlib.h": "c"
+    },
+    "cmake.additionalCompilerSearchDirs": [
+    ],
+    "code-runner.runInTerminal": true,
+    "cmake.sourceDirectory": "C:/Users/mdrn/Documents/GitHub/OPK-C/sort_comparison"
 }

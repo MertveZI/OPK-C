@@ -1,12 +1,14 @@
 /*  Курс ОПК ФФ, 3 семестр, 2025г.
     Задача № 6330 "Сортировка пузырьком"
     Стерлягов Сергей, гр. 24310*/
+
 #include "bubble_sort.h"
-#include "C:\Users\mdrn\Documents\GitHub\OPK-C\sort_comparison\swap.h"
+#include "swap.h"
 #include <stdio.h>
 
+
 /** <p>Сортирует массив пузырьком.</p>
-  * 
+  *
   * @param array указатель на массив, который необходимо отсортировать
   * @param size количество элементов в массиве
   */

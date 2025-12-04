@@ -14,7 +14,7 @@ int main() {
     printf("Задача №6352 'Сравнение сортировок'\n");
     printf("Размер\tПузырьковая\tВставками\tПирамидальная\n");
 
-    for(unsigned int i = 1; i < 10000; i = i * 10) {
+    for(unsigned int i = 100; i < 500000; i = i * 2) {
         unsigned int size = i;
         int *array = (int*)malloc(size * sizeof(int));
         int *uns_array = (int*)malloc(size * sizeof(int));

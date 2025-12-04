@@ -1,14 +1,15 @@
 /*  Курс ОПК ФФ, 3 семестр, 2025г.
     Задача № 6330 "Сортировка вставками"
     Стерлягов Сергей, гр. 24310*/
-#include "C:\Users\mdrn\Documents\GitHub\OPK-C\sort_comparison\swap.h"
+
 #include "insertion_sort.h"
+#include "swap.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 
 /** <p>Сортирует массив методом вставок.</p>
-  * 
+  *
   * @param array массив, который необходимо отсортировать
   * @param size размер массива
   */

@@ -1,12 +1,9 @@
 /*  Курс ОПК ФФ, 3 семестр, 2025г.
     Задача № 6340 "Пирамидальная сортировка"
     Стерлягов Сергей, гр. 24310*/
-
-#include "heap_sort.h"
-#include "C:\Users\mdrn\Documents\GitHub\OPK-C\sort_comparison\swap.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "heap_sort.h"
 
 /** <p>Меняет элементы a и b местами.</p>
   * 

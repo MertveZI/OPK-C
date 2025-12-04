@@ -10,5 +10,6 @@
     },
     "cmake.additionalCompilerSearchDirs": [
     ],
-    "code-runner.runInTerminal": true
+    "code-runner.runInTerminal": true,
+    "cmake.sourceDirectory": "C:/Users/mdrn/Documents/GitHub/OPK-C/sort_comparison"
 }

@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1764831525 source:c:\users\mdrn\documents\github\opk-c\sort_comparison2\sort comparison\bubble_sort.c
+	"bubble_sort.h"
+	"swap.h"
+	<stdio.h>
+
+1763651686 c:\users\mdrn\documents\github\opk-c\sort_comparison2\sort comparison\bubble_sort.h
+
+1764831402 source:c:\users\mdrn\documents\github\opk-c\sort_comparison2\sort comparison\heap_sort.c
+	"heap_sort.h"
+	"swap.h"
+	<stdio.h>
+	<stdlib.h>
+
+1763651358 c:\users\mdrn\documents\github\opk-c\sort_comparison2\sort comparison\heap_sort.h
+
+1764831554 source:c:\users\mdrn\documents\github\opk-c\sort_comparison2\sort comparison\insertion_sort.c
+	"insertion_sort.h"
+	"swap.h"
+	<stdio.h>
+	<stdlib.h>
+
+1763651744 c:\users\mdrn\documents\github\opk-c\sort_comparison2\sort comparison\insertion_sort.h
+
+1764830622 source:c:\users\mdrn\documents\github\opk-c\sort_comparison2\sort comparison\main.c
+	"heap_sort.h"
+	"bubble_sort.h"
+	"insertion_sort.h"
+	"get_time.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1763647323 c:\users\mdrn\documents\github\opk-c\sort_comparison2\sort comparison\get_time.h
+
+1764831541 source:c:\users\mdrn\documents\github\opk-c\sort_comparison2\sort comparison\get_time.c
+	"heap_sort.h"
+	"bubble_sort.h"
+	"insertion_sort.h"
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1764831461 c:\users\mdrn\documents\github\opk-c\sort_comparison2\sort comparison\swap.h
+
+1764831393 source:c:\users\mdrn\documents\github\opk-c\sort_comparison2\sort comparison\swap.c
+	"swap.h"
+	<stdio.h>
+
